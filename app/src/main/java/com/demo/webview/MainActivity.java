@@ -15,5 +15,6 @@ public class MainActivity extends AppCompatActivity {
         wv.getSettings().setJavaScriptEnabled(true);
         wv.addJavascriptInterface(new WebAppInterface(this), "android");
         wv.setWebViewClient(new WebViewClient());
+        wv.loadUrl("file:///android_asset/html/index.html");
     }
 }
